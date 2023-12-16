@@ -14,6 +14,22 @@ First open cmd in folder part and write "**npm install**" if you dont want this 
 
 {% embed url="https://github.com/0resmon/res-audio" %}
 
+## Setup Step 1
+
+Open the <mark style="color:blue;">**config.js**</mark> file for video downloads and audio recordings to work.
+
+Type your server's IP address here.
+
+```javascript
+Config.Host = "127.0.0.1" // Replace Your IP
+```
+
+In order to record voice recordings, you must create TCP and UDP ports inbound and outbound.
+
+The port number must be a number you specify or 48080.
+
+{% embed url="https://www.youtube.com/watch?v=2AcqibSJ8ng" %}
+
 After moving the script to the resources folder, open your **server.cfg** file and position it as follows.
 
 ```
