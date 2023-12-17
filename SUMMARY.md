@@ -16,6 +16,10 @@
   * [Installation](0r-resources/0r-easy-time/installation.md)
 * [0R Lockpick](0r-resources/0r-lockpick/README.md)
   * [Installation](0r-resources/0r-lockpick/installation.md)
+* [0R Target](0r-resources/0r-target/README.md)
+  * [Installation](0r-resources/0r-target/installation.md)
+* [0R Textui](0r-resources/0r-textui/README.md)
+  * [Installation](0r-resources/0r-textui/installation.md)
 
 ## S4 Resources
 
