@@ -1,5 +1,5 @@
 ---
-description: LOCKPICK ANIMATION SYSTEM
+description: TEXT UI SYSTEM
 ---
 
 # 0R Textui
@@ -10,11 +10,7 @@ Please note that this software file is protected by DMCA protection and its ille
 
 ### Follow Instructions
 
-{% content-ref url="../0r-lockpick/installation.md" %}
-[installation.md](../0r-lockpick/installation.md)
+{% content-ref url="../0r-textui/installation.md" %}
+[installation.md](../0r-textui/installation.md)
 {% endcontent-ref %}
-
-## Preview
-
-{% embed url="https://www.youtube.com/watch?v=dcPHO0LQD9A" %}
 
