@@ -1,8 +1,10 @@
 ---
-description: LOCKPICK ANIMATION SYSTEM
+description: TARGET SYSTEM
 ---
 
 # 0R Target
+
+qb-target users don't need to change anything, script is still gonna work. Our script converting the exports directly just make sure 0r-target started after qb-core
 
 Please note that this software file is protected by DMCA protection and its illegal sale or distribution is prohibited.
 
@@ -10,11 +12,7 @@ Please note that this software file is protected by DMCA protection and its ille
 
 ### Follow Instructions
 
-{% content-ref url="../0r-lockpick/installation.md" %}
-[installation.md](../0r-lockpick/installation.md)
+{% content-ref url="../0r-target/installation.md" %}
+[installation.md](../0r-target/installation.md)
 {% endcontent-ref %}
-
-## Preview
-
-{% embed url="https://www.youtube.com/watch?v=dcPHO0LQD9A" %}
 
