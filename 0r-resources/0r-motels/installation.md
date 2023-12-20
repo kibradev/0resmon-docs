@@ -46,7 +46,7 @@ TriggerEvent('0R:Motels:Client:SetPlayerRandomRoom')
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-## qb-multicharacter Setup
+### qb-multicharacter Setup
 
 {% hint style="danger" %}
 First you must disable **qb-apartments.**
