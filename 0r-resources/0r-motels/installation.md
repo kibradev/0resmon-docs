@@ -24,25 +24,69 @@ This installation guide covers both <mark style="color:red;">ESX</mark> and <mar
 
 {% embed url="https://drive.google.com/file/d/1LpU9HW0qN2l-3KovzFHunm5YNTO44Nho/view?usp=sharing" %}
 
-**This installation guide is for **<mark style="color:green;">**ESX**</mark> **and **<mark style="color:green;">**QBCore.**</mark>
+## Apartment System Installation
 
-## Required Resources
+Apartment system, when players register to the server, they automatically start the server in the hotel room. To achieve this, we need to make a few changes.
 
-* 0r\_lib <mark style="color:blue;">(on your keymaster)</mark>
-* Motel Map Files&#x20;
+First, change **Config.Apartment = true** in the config.lua file.
 
-{% embed url="https://drive.google.com/file/d/1LpU9HW0qN2l-3KovzFHunm5YNTO44Nho/view?usp=sharing" %}
+```lua
+Config.Apartment = true
+```
 
-### Supported Inventories
+### esx\_multicharacter Setup
 
-* ox\_inventory&#x20;
-* ps-inventory
-* ls-inventory
-* qs-inventory
-* core-inventory
-* lj-inventory
-* origen\_inventory
-* qb-inventory
+Open the <mark style="color:blue;">**esx\_multicharacter/client/main.lua**</mark> file and then, as you see in the photo, you should leave a space after line <mark style="color:blue;">**271**</mark> and place the triggerevent that allows giving a Random Room.
+
+The code sample is available below the photo.
+
+```lua
+TriggerEvent('0R:Motels:Client:SetPlayerRandomRoom')
+```
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+## qb-multicharacter Setup
+
+{% hint style="danger" %}
+First you must disable **qb-apartments.**
+{% endhint %}
+
+What you need to do here is; Open the <mark style="color:blue;">**qb-multicharacter/client/main.lua**</mark> file and find the <mark style="color:blue;">**qb-multicharacter:client:closeNUIdefault**</mark> event starting at <mark style="color:blue;">**line 100**</mark>. And update as below.&#x20;
+
+**Code You Need to Add:**
+
+```lua
+if not exports["0r_motels"]:GetApartment() then
+    SetEntityCoords(PlayerPedId(), Config.DefaultSpawn.x, Config.DefaultSpawn.y, Config.DefaultSpawn.z)
+end
+```
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+What we need to do in the same way here is; Open the <mark style="color:blue;">**qb-multicharacter/server/main.lua**</mark> file and find the <mark style="color:blue;">**qb-multicharacter:server:createCharacter**</mark> event starting at <mark style="color:blue;">**line 116**</mark> and add the following code with a space after <mark style="color:blue;">**line 124.**</mark>
+
+```lua
+if exports["0r_motels"]:GetApartment() then
+    TriggerClientEvent('0R:Motels:Client:SetPlayerRandomRoom', src)
+end
+```
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### Using a different multi-character?
+
+If you are using a different multi-character, you need to place the event in the server or client event where the player is registered to integrate it. I leave a small explanation.
+
+You must add this code to the new section of the player's character. Each multicharacter has a default spawn point. You must cancel these spawn points.&#x20;
+
+```lua
+if exports["0r_motels"]:GetApartment() then
+    TriggerClientEvent('0R:Motels:Client:SetPlayerRandomRoom', src)
+end
+```
+
+We have an export for this, `exports["0r_motels"]:GetApartment()`. Thanks to this export, you can check whether the Apartment system is active or not. If `Config.Apartment` is true, you must cancel the default spawn points of your multicharacter.
 
 ## Setup for Ox Inventory
 
@@ -72,8 +116,6 @@ end)
 
 ## Setup for QS, LJ, Origen, PS, QB Inventories
 
-
-
 The best thing about these inventories is that their infrastructure is qb-inventory. That's why the installations are the same.
 
 Place these items in items.lua in your inventories. (qb-inventory to qb-core/shared/items.lua)
@@ -99,11 +141,26 @@ Open your inventory javascript file. And search for the <mark style="color:blue;
 
 The server.cfg initialization order should be as follows.
 
+{% hint style="danger" %}
+If you are going to use an apartment system, pay attention to the server.cfg sequence. The motel system must be initialized before your multicharacter script.
+{% endhint %}
+
+### ESX
+
 ```
------ your core ----
-start [motelmaps]
+start es_extended
 start 0r_lib
 start 0r_motels
+--- esx resources --
+```
+
+### QBCore
+
+```
+start qb-core
+start 0r_lib
+start 0r_motels
+--- qbcore resources --
 ```
 
 ## What You Need to Know
