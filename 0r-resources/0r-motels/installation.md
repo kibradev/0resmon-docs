@@ -9,7 +9,7 @@ This installation guide covers both <mark style="color:red;">ESX</mark> and <mar
 ## What is required for installation
 
 * **0r\_lib** <mark style="color:blue;">(You can find it on your Keymaster.)</mark>
-* **Map Files**
+* **Map Files** <mark style="color:blue;">(You can find it script files)</mark>
 
 ### Supported Inventories
 
@@ -21,8 +21,6 @@ This installation guide covers both <mark style="color:red;">ESX</mark> and <mar
 * origen\_inventory
 * ls-inventory
 * core-inventory
-
-{% embed url="https://drive.google.com/file/d/1LpU9HW0qN2l-3KovzFHunm5YNTO44Nho/view?usp=sharing" %}
 
 ## Apartment System Installation
 
