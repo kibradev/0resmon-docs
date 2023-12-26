@@ -13,7 +13,7 @@
 * [0R Studio](0r-resources/0r-studio/README.md)
   * [Installation](0r-resources/0r-studio/installation.md)
 * [0R Easy Time](0r-resources/0r-easy-time/README.md)
-  * [Installation](0r-resources/0r-easy-time/installation.md)
+  * [0R Easytime](0r-resources/0r-easy-time/0r-easytime.md)
 * [0R Lockpick](0r-resources/0r-lockpick/README.md)
   * [Installation](0r-resources/0r-lockpick/installation.md)
 * [0R Target](0r-resources/0r-target/README.md)
