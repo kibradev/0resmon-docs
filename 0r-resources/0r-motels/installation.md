@@ -135,6 +135,14 @@ Open your inventory javascript file. And search for the <mark style="color:blue;
 );
 ```
 
+**For New qb-inventory**
+
+```javascript
+case "motelcard":
+    return `<p><strong>Motel: </strong><span>${itemData.info.motelname}</span></p>
+    <p><strong>Room ID: </strong><span>${itemData.info.roomid}</span></p>`;
+```
+
 ## server.cfg
 
 The server.cfg initialization order should be as follows.
