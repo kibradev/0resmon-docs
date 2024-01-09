@@ -25,6 +25,8 @@
 
 * [S4 House](s4-resources/s4-house/README.md)
   * [Installation](s4-resources/s4-house/installation.md)
+* [S4 Report System V2](s4-resources/s4-house-1/README.md)
+  * [Installation](s4-resources/s4-house-1/installation.md)
 
 ## KIBRA RESOURCES
 
