@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 0Resmon Docs](README.md)
+* [0Resmon Documentation](README.md)
 
 ## 0R RESOURCES
 

@@ -2,7 +2,7 @@
 description: 0Resmon Resources Document
 ---
 
-# 👋 0Resmon Docs
+# 0Resmon Documentation
 
 ## Overview
 
@@ -12,6 +12,14 @@ We've put together some helpful guides for you to get setup with our product qui
 
 
 
-<figure><img src=".gitbook/assets/DFGHJ43F43F2G.png" alt=""><figcaption></figcaption></figure>
+<div data-full-width="false">
 
-{% embed url="https://discord.gg/0resmon" %}
+<figure><img src=".gitbook/assets/DFGHJ43F43F2G.png" alt="" width="375"><figcaption><p><a href="https://store.0resmon.org">store.0resmon.org</a></p></figcaption></figure>
+
+</div>
+
+## 0Resmon Discord Server
+
+If you have questions about our products or want to get support, join our server.
+
+{% embed url="https://discord.0resmon.org" %}
