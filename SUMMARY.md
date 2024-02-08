@@ -4,9 +4,6 @@
 
 ## 0R RESOURCES
 
-* [0R Lib](0r-resources/0r-lib/README.md)
-  * [Server Functions](0r-resources/0r-lib/server-functions.md)
-  * [Client Functions](0r-resources/0r-lib/client-functions.md)
 * [0R Motels](0r-resources/0r-motels/README.md)
   * [Installation](0r-resources/0r-motels/installation.md)
   * [Configuration](0r-resources/0r-motels/configuration.md)
