@@ -27,6 +27,12 @@
   * [Installation](s4-resources/s4-house/installation.md)
 * [S4 Report System V2](s4-resources/s4-house-1/README.md)
   * [Installation](s4-resources/s4-house-1/installation.md)
+* [S4 Health System V2](s4-resources/s4-house-1-1/README.md)
+  * [Installation](s4-resources/s4-house-1-1/installation.md)
+  * [Adapting Custom Ambulance Job](s4-resources/s4-house-1-1/installation-1.md)
+  * [Bleeding Adjustment](s4-resources/s4-house-1-1/installation-2.md)
+  * [How To Add Custom Items](s4-resources/s4-house-1-1/installation-3.md)
+  * [Required Items](s4-resources/s4-house-1-1/installation-4.md)
 
 ## KIBRA RESOURCES
 
