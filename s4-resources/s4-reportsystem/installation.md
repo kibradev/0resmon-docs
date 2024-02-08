@@ -10,10 +10,12 @@ This installation guide covers both <mark style="color:red;">ESX</mark> and <mar
 
 If you do not install all the necessary scripts, the script cannot run.
 
-| Resource    | Download                                                |
-| ----------- | ------------------------------------------------------- |
-| MugShotBase | [Download](https://github.com/BaziForYou/MugShotBase64) |
-| s4-render   | [Download](https://github.com/cokluk/s4-render)         |
+| Resource         | Download                                                  |
+| ---------------- | --------------------------------------------------------- |
+| MugShotBase      | [Download](https://github.com/BaziForYou/MugShotBase64)   |
+| screenshot-basic | [Download](https://github.com/citizenfx/screenshot-basic) |
+| 0r-core          | [Download](https://github.com/0resmon/0r-core)            |
+| s4-render        | [Download](https://github.com/cokluk/s4-render)           |
 
 ## Config.PhotoWebhook
 
